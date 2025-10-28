@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillBridge - About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: #20c997 !important;
+      font-size: 1.8rem;
+    }
+
+    .about-hero {
+      background-color: #e9ecef;
+      text-align: center;
+      padding: 80px 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .about-hero h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      color: #212529;
+      margin-bottom: 20px;
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      color: #495057;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-weight: 700;
+      color: #20c997;
+      margin-bottom: 50px;
+    }
+
+    .mission-section,
+    .team-section {
+      background-color: #ffffff;
+      padding: 80px 0;
+    }
+
+    .mission-text {
+      font-size: 1.1rem;
+      color: #495057;
+    }
+
+    .icon-circle {
+      width: 80px;
+      height: 80px;
+      background-color: #20c997;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 8px rgba(32, 201, 151, 0.3);
+    }
+
+    .team-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #20c997;
+    }
+
+    .cta {
+      background-color: #20c997;
+      color: white;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: #adb5bd;
+      padding: 40px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: #20c997;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #17a97b;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">SkillBridge</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Opportunities</a></li>
+          <li class="nav-item"><a class="btn btn-success ms-lg-3" href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>About SkillBridge</h1>
+      <p>We’re on a mission to connect passionate volunteers with NGOs and organizations that make the world a better
+        place — one project at a time.</p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission-section">
+    <div class="container">
+      <h2 class="section-title">Our Mission</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-md-6 text-center">
+          <div class="icon-circle"><i class="bi bi-globe"></i></div>
+        </div>
+        <div class="col-md-6">
+          <p class="mission-text">
+            At SkillBridge, we believe in the power of collaboration and skill-sharing. Our platform empowers skilled
+            individuals to contribute to meaningful causes by connecting them directly with NGOs and community-based
+            organizations.
+          </p>
+          <p class="mission-text">
+            Whether it’s web development, design, marketing, education, or healthcare — volunteers can bridge their
+            skills to drive social impact and create long-term value for society.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="https://via.placeholder.com/120" alt="Team Member 1">
+            <h5 class="fw-bold mt-3">Tejas Kumbhare</h5>
+            <p class="text-success fw-semibold mb-1">Project Lead</p>
+            <p class="text-muted small">Handles overall project design, structure, and team collaboration for
+              SkillBridge.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="https://via.placeholder.com/120" alt="Team Member 2">
+            <h5 class="fw-bold mt-3">Aditi Sharma</h5>
+            <p class="text-success fw-semibold mb-1">Frontend Developer</p>
+            <p class="text-muted small">Develops UI components, ensures responsive design, and maintains brand
+              consistency.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="https://via.placeholder.com/120" alt="Team Member 3">
+            <h5 class="fw-bold mt-3">Rohan Mehta</h5>
+            <p class="text-success fw-semibold mb-1">Backend Developer</p>
+            <p class="text-muted small">Focuses on database integration, API development, and platform security.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Join Us in Making a Difference!</h2>
+      <p class="mb-4">Be part of our growing network of volunteers and NGOs shaping a better tomorrow.</p>
+      <a href="register.html" class="btn btn-light fw-bold me-3">Get Started</a>
+      <a href="login.html" class="btn btn-outline-light fw-bold">Already a Member? Sign In</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 SkillBridge. All rights reserved. | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
