@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillBridge - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: #20c997 !important;
+      font-size: 1.8rem;
+    }
+
+    .hero {
+      background-color: #e9ecef;
+      padding: 80px 0;
+      text-align: center;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #212529;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #495057;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+    }
+
+    .btn-skillbridge {
+      background-color: #20c997;
+      color: white;
+      border-radius: 8px;
+      padding: 12px 28px;
+      font-weight: 600;
+      transition: 0.3s;
+      border: 2px solid transparent;
+    }
+
+    .btn-skillbridge:hover {
+      background-color: #17a97b;
+    }
+
+    .section-title {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: #20c997;
+    }
+
+    .feature-card {
+      border: none;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card i {
+      font-size: 2.5rem;
+      color: #20c997;
+      margin-bottom: 20px;
+    }
+
+    .updates-section {
+      background-color: #ffffff;
+      padding: 80px 0;
+    }
+
+    .updates-item {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #dee2e6;
+    }
+
+    .cta {
+      background-color: #20c997;
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta h2 {
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: #adb5bd;
+      padding: 40px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: #20c997;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #17a97b;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">SkillBridge</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Opportunities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Volunteers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="btn btn-skillbridge ms-lg-3" href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome Back to SkillBridge!</h1>
+      <p>Discover new volunteering opportunities, collaborate with NGOs, and make a lasting impact using your skills.</p>
+      <a href="#" class="btn btn-skillbridge">Explore Opportunities</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container py-5">
+    <h2 class="section-title">What You Can Do</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <i class="bi bi-search"></i>
+          <h4>Find Opportunities</h4>
+          <p>Browse projects that need your skills and apply to make an impact in your community or beyond.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <i class="bi bi-people"></i>
+          <h4>Connect with NGOs</h4>
+          <p>Collaborate directly with non-profit organizations and contribute to meaningful initiatives.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <i class="bi bi-graph-up-arrow"></i>
+          <h4>Grow Your Experience</h4>
+          <p>Enhance your portfolio and professional skills through real-world volunteering projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates -->
+  <section class="updates-section">
+    <div class="container">
+      <h2 class="section-title">Recent Opportunities</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="updates-item">
+            <h5 class="fw-bold">Graphic Designer for Awareness Campaign</h5>
+            <p class="text-muted mb-2">GreenFuture NGO</p>
+            <p>Help design visuals for environmental awareness posts and campaigns.</p>
+            <a href="#" class="text-success fw-bold text-decoration-none">View Details →</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="updates-item">
+            <h5 class="fw-bold">Website Developer for Charity Portal</h5>
+            <p class="text-muted mb-2">HopeBridge Foundation</p>
+            <p>Assist in building a donation and volunteer management web platform.</p>
+            <a href="#" class="text-success fw-bold text-decoration-none">View Details →</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="updates-item">
+            <h5 class="fw-bold">Social Media Manager</h5>
+            <p class="text-muted mb-2">EducateAll Initiative</p>
+            <p>Manage NGO social pages to increase awareness and volunteer engagement.</p>
+            <a href="#" class="text-success fw-bold text-decoration-none">View Details →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Post a New Opportunity or Start Volunteering Today!</h2>
+      <a href="#" class="btn btn-light fw-bold me-3">Post Opportunity</a>
+      <a href="#" class="btn btn-outline-light fw-bold">Find Volunteers</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 SkillBridge. All rights reserved. | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
