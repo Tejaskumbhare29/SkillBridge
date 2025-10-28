@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillBridge - Opportunities</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: #20c997 !important;
+      font-size: 1.8rem;
+    }
+
+    .page-header {
+      background-color: #e9ecef;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .page-header h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      color: #212529;
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: 1.1rem;
+      color: #495057;
+    }
+
+    .search-bar {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      margin-top: -40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .opportunity-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .opportunity-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .opportunity-card h5 {
+      color: #20c997;
+      font-weight: 700;
+    }
+
+    .opportunity-card .badge {
+      background-color: #20c997;
+    }
+
+    .btn-join {
+      background-color: #20c997;
+      border: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-join:hover {
+      background-color: #17a97b;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: #adb5bd;
+      padding: 40px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: #20c997;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #17a97b;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">SkillBridge</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="opportunities.html">Opportunities</a></li>
+          <li class="nav-item"><a class="btn btn-success ms-lg-3" href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Volunteer Opportunities</h1>
+      <p>Explore meaningful projects and connect your skills with causes that matter.</p>
+    </div>
+  </section>
+
+  <!-- Search Bar -->
+  <div class="container search-bar">
+    <form class="row g-3 align-items-center">
+      <div class="col-md-4">
+        <input type="text" class="form-control" placeholder="Search by skill or keyword">
+      </div>
+      <div class="col-md-4">
+        <select class="form-select">
+          <option selected>All Categories</option>
+          <option>Education</option>
+          <option>Health</option>
+          <option>Environment</option>
+          <option>Technology</option>
+          <option>Community Service</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-success w-100"><i class="bi bi-search me-2"></i>Search</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Opportunities List -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Opportunity 1 -->
+        <div class="col-md-4">
+          <div class="opportunity-card">
+            <h5>Teach Coding to Underprivileged Kids</h5>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Mumbai, India</p>
+            <span class="badge mb-3">Education</span>
+            <p>Join an NGO working to provide free computer literacy and coding education to children in need.</p>
+            <button class="btn btn-join w-100">Join Now</button>
+          </div>
+        </div>
+
+        <!-- Opportunity 2 -->
+        <div class="col-md-4">
+          <div class="opportunity-card">
+            <h5>Web Developer for NGO Website</h5>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Remote</p>
+            <span class="badge mb-3">Technology</span>
+            <p>Help design and maintain an NGO’s online platform to improve outreach and volunteer engagement.</p>
+            <button class="btn btn-join w-100">Join Now</button>
+          </div>
+        </div>
+
+        <!-- Opportunity 3 -->
+        <div class="col-md-4">
+          <div class="opportunity-card">
+            <h5>Community Health Awareness Volunteer</h5>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Pune, India</p>
+            <span class="badge mb-3">Health</span>
+            <p>Assist NGOs in organizing local awareness programs on nutrition, hygiene, and preventive healthcare.</p>
+            <button class="btn btn-join w-100">Join Now</button>
+          </div>
+        </div>
+
+        <!-- Opportunity 4 -->
+        <div class="col-md-4">
+          <div class="opportunity-card">
+            <h5>Environmental Cleanup Drive</h5>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Hyderabad, India</p>
+            <span class="badge mb-3">Environment</span>
+            <p>Join hands with local NGOs to organize cleanup drives and promote sustainable waste management.</p>
+            <button class="btn btn-join w-100">Join Now</button>
+          </div>
+        </div>
+
+        <!-- Opportunity 5 -->
+        <div class="col-md-4">
+          <div class="opportunity-card">
+            <h5>Social Media Intern for NGO</h5>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Remote</p>
+            <span class="badge mb-3">Community Service</span>
+            <p>Support NGOs in promoting their mission online through creative social media campaigns and content.</p>
+            <button class="btn btn-join w-100">Join Now</button>
+          </div>
+        </div>
+
+        <!-- Opportunity 6 -->
+        <div class="col-md-4">
+          <div class="opportunity-card">
+            <h5>Graphic Designer for Charity Events</h5>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Bengaluru, India</p>
+            <span class="badge mb-3">Technology</span>
+            <p>Design digital and print materials for events that support local charities and fundraisers.</p>
+            <button class="btn btn-join w-100">Join Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 SkillBridge. All rights reserved. |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
